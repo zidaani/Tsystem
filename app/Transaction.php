@@ -6,5 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Transaction extends Model
 {
-    //
+     protected $primaryKey = 'id';
+
+    protected $fillable = ['daily_amount','date','trans_id'];
 }

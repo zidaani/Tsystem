@@ -101,6 +101,9 @@
             <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li> -->
           </ul>
         </li>
+
+
+        
        <!--  <li class="treeview">
           <a href="#">
             <i class="fa fa-edit"></i> <span>Forms</span>

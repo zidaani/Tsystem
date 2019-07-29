@@ -44,7 +44,7 @@
                     @enderror
                   </div>
                 </div>
-              <div class="box-body">
+              <!-- <div class="box-body">
                 <div class="form-group">
                   <label for="inputEmail3" class="col-sm-4 control-label">cashout commission</label>
 
@@ -56,8 +56,8 @@
                         </span>
                     @enderror
                   </div>
-                </div>
-                 <div class="form-group">
+                </div> -->
+                <!--  <div class="form-group">
                   <label for="inputEmail3" class="col-sm-4 control-label">Monthly Payment</label>
 
                   <div class="col-sm-8">
@@ -68,7 +68,7 @@
                         </span>
                     @enderror
                   </div>
-                </div>
+                </div> -->
              <!--    <div class="form-group">
                   <label for="inputEmail3" class="col-sm-4 control-label">Last Name</label>
 

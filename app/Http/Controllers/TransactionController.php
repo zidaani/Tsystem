@@ -14,7 +14,7 @@ class TransactionController extends Controller
      */
      public function index(){
          $array['transactions'] =  Transaction::all();
-        return view('admin.transaction.index')->with($array);
+        return view('admin.transactions.index')->with($array);
        }
 
 
@@ -36,7 +36,26 @@ class TransactionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $validator = Validator::make($request->all(), [
+            'daily_amount' => 'required|unique:branches|min:4|max:24',
+            // 'name_of_agent' => 'required|unique:branches|min:4',
+            'date' => 'required|date|before:tomorrow',
+        ],);
+
+        if ($validator->fails()) {
+            return redirect(route('transactions.index'))
+                        ->withErrors($validator)
+                        ->withInput();
+        }
+
+       $data = $request->all();
+
+       Transaction::create($data);
+
+       return redirect(route('transaction.index'));
+    }
+    public function create(){
+        return view('transaction.index');
     }
 
     /**
@@ -45,9 +64,11 @@ class TransactionController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+   public function show($trans_id)
     {
-        //
+        $array['transaction'] = Transaction::findOrFail($id);
+        
+       return view('admin.transaction.index')->with($array);
     }
 
     /**

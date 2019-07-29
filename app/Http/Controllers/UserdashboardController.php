@@ -13,7 +13,7 @@ class UserdashboardController extends Controller
      */
   public function index(){
          // $array['userdashboard'] =  Userdashboard::all();
-        return view('users.index');
+        return view('users.trans.index');
        }
 
 
@@ -35,7 +35,7 @@ class UserdashboardController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
