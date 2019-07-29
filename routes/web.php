@@ -10,11 +10,20 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
 });
 
 Auth::routes();
+Route::get('/admin', 'HomeController@index')->name('home');
+Route::get('/admin/branches', 'BranchesController@index')->name('branches');
+Route::resource('admin/branches', 'BranchesController');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('admin/agents', 'AgentsController');
+Route::resource('admin/transaction', 'TransactionController');
+Route::get('users', 'UserdashboardController@index')->name('users.dashboard.index');
+
+// Route::get('/agents', 'LoginAgentsController@index')->name('agents');
+
+
+

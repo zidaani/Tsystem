@@ -24,7 +24,7 @@
             <div class="inner">
               <h3>150</h3>
 
-              <p>New Orders</p>
+              <p>Total Cashout Commissions</p>
             </div>
             <div class="icon">
               <i class="ion ion-bag"></i>
@@ -39,7 +39,7 @@
             <div class="inner">
               <h3>53<sup style="font-size: 20px">%</sup></h3>
 
-              <p>Bounce Rate</p>
+              <p>Total Cashout Commissions </p>
             </div>
             <div class="icon">
               <i class="ion ion-stats-bars"></i>
@@ -54,7 +54,7 @@
             <div class="inner">
               <h3>44</h3>
 
-              <p>User Registrations</p>
+              <p>Monthly Payment</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>
@@ -69,7 +69,7 @@
             <div class="inner">
               <h3>65</h3>
 
-              <p>Unique Visitors</p>
+              <p>Total for the month</p>
             </div>
             <div class="icon">
               <i class="ion ion-pie-graph"></i>
@@ -116,7 +116,7 @@
               </div>
             </div>
             <div class="box-body chat" id="chat-box">
-              <!-- chat item -->
+              <!-- chat item
               <div class="item">
                 <img src="dist/img/user4-128x128.jpg" alt="user image" class="online">
 
@@ -139,12 +139,12 @@
                   <div class="pull-right">
                     <button type="button" class="btn btn-primary btn-sm btn-flat">Open</button>
                   </div>
-                </div>
+                </div> -->
                 <!-- /.attachment -->
               </div>
               <!-- /.item -->
               <!-- chat item -->
-              <div class="item">
+             <!--  <div class="item">
                 <img src="dist/img/user3-128x128.jpg" alt="user image" class="offline">
 
                 <p class="message">
@@ -156,10 +156,10 @@
                   the arrival of the new theme. They say it is going to be one the
                   best themes on the market
                 </p>
-              </div>
+              </div> -->
               <!-- /.item -->
               <!-- chat item -->
-              <div class="item">
+              <!-- <div class="item">
                 <img src="dist/img/user2-160x160.jpg" alt="user image" class="offline">
 
                 <p class="message">
@@ -171,11 +171,11 @@
                   the arrival of the new theme. They say it is going to be one the
                   best themes on the market
                 </p>
-              </div>
+              </div> -->
               <!-- /.item -->
             </div>
             <!-- /.chat -->
-            <div class="box-footer">
+          <!--   <div class="box-footer">
               <div class="input-group">
                 <input class="form-control" placeholder="Type message...">
 
@@ -184,11 +184,11 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- /.box (chat box) -->
 
           <!-- TO DO List -->
-          <div class="box box-primary">
+         <!--  <div class="box box-primary">
             <div class="box-header">
               <i class="ion ion-clipboard"></i>
 
@@ -203,24 +203,23 @@
                   <li><a href="#">&raquo;</a></li>
                 </ul>
               </div>
-            </div>
+            </div> -->
             <!-- /.box-header -->
-            <div class="box-body">
-              <!-- See dist/js/pages/dashboard.js to activate the todoList plugin -->
+            <!-- <div class="box-body">
+             
               <ul class="todo-list">
                 <li>
-                  <!-- drag handle -->
+                  
                   <span class="handle">
                         <i class="fa fa-ellipsis-v"></i>
                         <i class="fa fa-ellipsis-v"></i>
                       </span>
-                  <!-- checkbox -->
                   <input type="checkbox" value="">
-                  <!-- todo text -->
+                 
                   <span class="text">Design a nice theme</span>
-                  <!-- Emphasis label -->
+                 
                   <small class="label label-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
-                  <!-- General tools such as edit or delete-->
+                  
                   <div class="tools">
                     <i class="fa fa-edit"></i>
                     <i class="fa fa-trash-o"></i>
@@ -292,27 +291,27 @@
                   </div>
                 </li>
               </ul>
-            </div>
+            </div> -->
             <!-- /.box-body -->
-            <div class="box-footer clearfix no-border">
+         <!--    <div class="box-footer clearfix no-border">
               <button type="button" class="btn btn-default pull-right"><i class="fa fa-plus"></i> Add item</button>
             </div>
           </div>
-          <!-- /.box -->
+         
 
-          <!-- quick email widget -->
+          
           <div class="box box-info">
             <div class="box-header">
               <i class="fa fa-envelope"></i>
 
               <h3 class="box-title">Quick Email</h3>
-              <!-- tools box -->
+              
               <div class="pull-right box-tools">
                 <button type="button" class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip"
                         title="Remove">
                   <i class="fa fa-times"></i></button>
               </div>
-              <!-- /. tools -->
+             
             </div>
             <div class="box-body">
               <form action="#" method="post">
@@ -333,16 +332,14 @@
                 <i class="fa fa-arrow-circle-right"></i></button>
             </div>
           </div>
-
-        </section>
-        <!-- /.Left col -->
-        <!-- right col (We are only adding the ID to make the widgets sortable)-->
+ -->
+        <!-- </section>
+       
         <section class="col-lg-5 connectedSortable">
 
-          <!-- Map box -->
           <div class="box box-solid bg-light-blue-gradient">
             <div class="box-header">
-              <!-- tools box -->
+           
               <div class="pull-right box-tools">
                 <button type="button" class="btn btn-primary btn-sm daterange pull-right" data-toggle="tooltip"
                         title="Date range">
@@ -351,7 +348,7 @@
                         data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
                   <i class="fa fa-minus"></i></button>
               </div>
-              <!-- /. tools -->
+            
 
               <i class="fa fa-map-marker"></i>
 
@@ -361,33 +358,33 @@
             </div>
             <div class="box-body">
               <div id="world-map" style="height: 250px; width: 100%;"></div>
-            </div>
+            </div> -->
             <!-- /.box-body-->
-            <div class="box-footer no-border">
+          <!--   <div class="box-footer no-border">
               <div class="row">
                 <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
                   <div id="sparkline-1"></div>
                   <div class="knob-label">Visitors</div>
-                </div>
+                </div> -->
                 <!-- ./col -->
-                <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
+               <!--  <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
                   <div id="sparkline-2"></div>
                   <div class="knob-label">Online</div>
-                </div>
+                </div> -->
                 <!-- ./col -->
-                <div class="col-xs-4 text-center">
+               <!--  <div class="col-xs-4 text-center">
                   <div id="sparkline-3"></div>
                   <div class="knob-label">Exists</div>
-                </div>
+                </div> -->
                 <!-- ./col -->
-              </div>
-              <!-- /.row -->
+             <!--  </div>
+            
             </div>
-          </div>
+          </div> -->
           <!-- /.box -->
 
           <!-- solid sales graph -->
-          <div class="box box-solid bg-teal-gradient">
+          <!-- <div class="box box-solid bg-teal-gradient">
             <div class="box-header">
               <i class="fa fa-th"></i>
 
@@ -402,47 +399,47 @@
             </div>
             <div class="box-body border-radius-none">
               <div class="chart" id="line-chart" style="height: 250px;"></div>
-            </div>
+            </div> -->
             <!-- /.box-body -->
-            <div class="box-footer no-border">
+           <!--  <div class="box-footer no-border">
               <div class="row">
                 <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
                   <input type="text" class="knob" data-readonly="true" value="20" data-width="60" data-height="60"
                          data-fgColor="#39CCCC">
 
                   <div class="knob-label">Mail-Orders</div>
-                </div>
+                </div> -->
                 <!-- ./col -->
-                <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
+                <!-- <div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
                   <input type="text" class="knob" data-readonly="true" value="50" data-width="60" data-height="60"
                          data-fgColor="#39CCCC">
 
                   <div class="knob-label">Online</div>
-                </div>
+                </div> -->
                 <!-- ./col -->
-                <div class="col-xs-4 text-center">
+               <!--  <div class="col-xs-4 text-center">
                   <input type="text" class="knob" data-readonly="true" value="30" data-width="60" data-height="60"
                          data-fgColor="#39CCCC">
 
                   <div class="knob-label">In-Store</div>
-                </div>
+                </div> -->
                 <!-- ./col -->
-              </div>
-              <!-- /.row -->
+             <!--  </div>
+            
             </div>
-            <!-- /.box-footer -->
-          </div>
+          
+          </div> -->
           <!-- /.box -->
 
           <!-- Calendar -->
-          <div class="box box-solid bg-green-gradient">
+        <!--   <div class="box box-solid bg-green-gradient">
             <div class="box-header">
               <i class="fa fa-calendar"></i>
 
               <h3 class="box-title">Calendar</h3>
-              <!-- tools box -->
+              
               <div class="pull-right box-tools">
-                <!-- button with a dropdown -->
+               
                 <div class="btn-group">
                   <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown">
                     <i class="fa fa-bars"></i></button>
@@ -457,19 +454,19 @@
                 </button>
                 <button type="button" class="btn btn-success btn-sm" data-widget="remove"><i class="fa fa-times"></i>
                 </button>
-              </div>
+              </div> -->
               <!-- /. tools -->
-            </div>
-            <!-- /.box-header -->
+           <!--  </div>
+  
             <div class="box-body no-padding">
-              <!--The calendar -->
+          
               <div id="calendar" style="width: 100%"></div>
             </div>
-            <!-- /.box-body -->
+    
             <div class="box-footer text-black">
               <div class="row">
                 <div class="col-sm-6">
-                  <!-- Progress bars -->
+                
                   <div class="clearfix">
                     <span class="pull-left">Task #1</span>
                     <small class="pull-right">90%</small>
@@ -485,9 +482,9 @@
                   <div class="progress xs">
                     <div class="progress-bar progress-bar-green" style="width: 70%;"></div>
                   </div>
-                </div>
+                </div> -->
                 <!-- /.col -->
-                <div class="col-sm-6">
+               <!--  <div class="col-sm-6">
                   <div class="clearfix">
                     <span class="pull-left">Task #3</span>
                     <small class="pull-right">60%</small>
@@ -503,20 +500,19 @@
                   <div class="progress xs">
                     <div class="progress-bar progress-bar-green" style="width: 40%;"></div>
                   </div>
-                </div>
+                </div> -->
                 <!-- /.col -->
-              </div>
-              <!-- /.row -->
+              <!-- </div>
+        
             </div>
           </div>
-          <!-- /.box -->
+    
 
         </section>
-        <!-- right col -->
+        
       </div>
-      <!-- /.row (main row) -->
+      
 
     </section>
-    <!-- /.content -->
-  
+   -->
 @endsection
