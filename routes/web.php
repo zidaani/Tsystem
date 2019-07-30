@@ -19,7 +19,7 @@ Route::get('/admin', 'HomeController@index')->name('home');
 Route::get('/admin/branches', 'BranchesController@index')->name('branches');
 Route::resource('admin/branches', 'BranchesController');
 
-Route::resource('admin/agents', 'AgentsController');
+Route::resource('admin/users', 'UsersController');
 Route::resource('admin/transaction', 'TransactionController');
 Route::get('users', 'UserdashboardController@index')->name('users.dashboard.index');
 

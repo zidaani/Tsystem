@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Agent;
 use Validator;
 
-class AgentsController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class AgentsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
-         $array['agents'] = Agent::all();
-        return view('admin.agents.index')->with($array);
+         $array['users'] = Agent::all();
+        return view('admin.users.index')->with($array);
        }
 
 
@@ -29,12 +29,20 @@ class AgentsController extends Controller
     {
         $validator = Validator::make($request->all(),
                   [
-                    'first_name' => 'required|unique:agents|min:4|max:24',
-                    'last_name' => 'required|unique:agents|min:4',
-                    'education' => 'required|unique:agents|min:4',
-                    'date_of_birth' => 'required|date',
-                    'sex' => 'required',
-                    'branch' => 'required',
+                        'branch_id'=>'required',
+                        'first_name' => 'required|unique:agents|min:4|max:24',
+                        'last_name' => 'required|unique:agents|min:4',
+                        'other_name' => 'required|unique:agents|min:4', 
+                        'education' => 'required|unique:agents|min:4',
+                        'date_of_birth' => 'required|date',
+                        'sex' => 'required',
+                        'education' => 'required',
+                        'home_town' => 'required',
+                        'residential_address' => 'required',
+                        'email' => 'required',
+                        'type_id' => 'required',
+                        'password' => 'required',
+
                 ]);
 
         if ($validator->fails()) {
