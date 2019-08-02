@@ -13,8 +13,8 @@ class TransactionController extends Controller
      * @return \Illuminate\Http\Response
      */
      public function index(){
-         $array['transactions'] =  Transaction::all();
-        return view('admin.transactions.index')->with($array);
+         $array['transaction'] =  Transaction::all();
+        return view('users.trans.index')->with($array);
        }
 
 
@@ -23,9 +23,8 @@ class TransactionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
+    public function create(){
+        return view('trans.index');
     }
 
     /**
@@ -37,13 +36,14 @@ class TransactionController extends Controller
     public function store(Request $request)
     {
          $validator = Validator::make($request->all(), [
-            'daily_amount' => 'required|unique:branches|min:4|max:24',
-            // 'name_of_agent' => 'required|unique:branches|min:4',
+            'daily_amount' => 'required',
+          
             'date' => 'required|date|before:tomorrow',
         ],);
+          return $request;
 
         if ($validator->fails()) {
-            return redirect(route('transactions.index'))
+            return redirect(route('trans.index'))
                         ->withErrors($validator)
                         ->withInput();
         }
@@ -52,11 +52,9 @@ class TransactionController extends Controller
 
        Transaction::create($data);
 
-       return redirect(route('transaction.index'));
+       return redirect(route('trans.index'));
     }
-    public function create(){
-        return view('transaction.index');
-    }
+    
 
     /**
      * Display the specified resource.
@@ -68,7 +66,7 @@ class TransactionController extends Controller
     {
         $array['transaction'] = Transaction::findOrFail($id);
         
-       return view('admin.transaction.index')->with($array);
+       return view('users.trans.index')->with($array);
     }
 
     /**

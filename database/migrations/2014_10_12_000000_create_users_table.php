@@ -14,7 +14,7 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->bigIncrements('uid');
             $table->string('branch_id');
             $table->string('first_name');
             $table->string('last_name');
@@ -29,7 +29,10 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable(); 
             $table->string('password');
             $table->rememberToken();
-            $table->timestamps();
+             $table->softDeletes();
+            $table->timestamp('created_at')->default(date('y-m-d H:i:s', strtotime('now')));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
+
         });
     }
 

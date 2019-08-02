@@ -93,8 +93,8 @@
             </span>
           </a>
           <ul class="nav-link">
-            <li><a href="{{ route('agents.index')}}"><i class="fa fa-circle-o"></i>View Agents</a></li>
-             <li><a href="{{ route('agents.create')}}"><i class="fa fa-circle-o"></i>Add New Agent</a></li>
+            <li><a href="{{ route('users.index')}}"><i class="fa fa-circle-o"></i>View Agents</a></li>
+             <li><a href="{{ route('users.create')}}"><i class="fa fa-circle-o"></i>Add New Agent</a></li>
            <!--  <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
             <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
             <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>

@@ -26,11 +26,11 @@
           <!-- Horizontal Form -->
           <div class="box box-info">
             <div class="box-header with-border">
-              <h3 class="box-title">ADD A NEW AGENT</h3>
+              <h3 class="box-title">Daily Cashin Commission</h3>
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form class="form-horizontal" action="{{route('agents.store')}}" method="POST">
+            <form class="form-horizontal" action="{{route('users.store')}}" method="POST">
               @csrf
                <div class="form-group">
                   <label for="inputEmail3"class="col-sm-4 control-label">cashin commission</label>
@@ -44,6 +44,31 @@
                     @enderror
                   </div>
                 </div>
+
+
+                    <div class="form-group">
+                  <div class="box-footer mt-3">
+                    <div class="col-md-4">                      
+                      <button type="reset" class="btn btn-warning btn-block">Cancel</button>
+                    </div>
+                    <div class="col-md-8">                      
+                      <button type="submit" class="btn btn-success btn-block pull-right">submit</button>
+                    </div>
+                  </div>
+                  <!-- /.box-footer -->
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- /.box -->
+        </div>
+        <!--/.col (right) -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+
+    @endsection
               <!-- <div class="box-body">
                 <div class="form-group">
                   <label for="inputEmail3" class="col-sm-4 control-label">cashout commission</label>
@@ -172,29 +197,7 @@
                     <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                   </div>
                 </div> -->
-                <div class="form-group">
-                  <div class="box-footer mt-3">
-                    <div class="col-md-4">                      
-                      <button type="reset" class="btn btn-warning btn-block">Cancel</button>
-                    </div>
-                    <div class="col-md-8">                      
-                      <button type="submit" class="btn btn-success btn-block pull-right">submit</button>
-                    </div>
-                  </div>
-                  <!-- /.box-footer -->
-                </div>
-              </div>
-            </form>
-          </div>
-          <!-- /.box -->
-        </div>
-        <!--/.col (right) -->
-      </div>
-      <!-- /.row -->
-    </section>
-    <!-- /.content -->
-
-    @endsection
+            
 
 
 

@@ -9,7 +9,7 @@
     <section class="content-header">
       <h1 style="text-align: center">
         RECORD YOUR DAILY REVENUE HERE!!!!!
-        <small>WELCOME ADMIN {{Auth::user()->name}}</small>
+        <small>WELCOME ADMIN </small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -29,13 +29,25 @@
               <h3 class="box-title">ENTER YOUR DAILY CASHIN COMMISSION HERE</h3>
             </div>
            
-            <form class="form-horizontal" action="{{route('agents.store')}}" method="POST">
+            <form class="form-horizontal" action="{{route('users.store')}}" method="POST">
               @csrf
                <div class="form-group">
                   <label for="inputEmail3"class="col-sm-4 control-label">cashin commission</label>
 
                   <div class="col-sm-4">
-                    <input type="text" name="daily_amount"  class="form-control" id="inputEmail3" placeholder="hometown" value="{{old('cashin')}}">
+                    <input type="text" name="daily_amount"  class="form-control" id="inputEmail3" placeholder="hometown" value="{{old('daily_amount')}}">
+                    @error('cashin')
+                        <span class="invalid-feedback text-danger" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+                  </div>
+                </div>
+                 <div class="form-group">
+                  <label for="inputEmail3"class="col-sm-4 control-label">Date</label>
+
+                  <div class="col-sm-4">
+                    <input type="date" name="date"  class="form-control" id="inputEmail3" placeholder="hometown" value="{{old('date')}}">
                     @error('cashin')
                         <span class="invalid-feedback text-danger" role="alert">
                             <strong>{{ $message }}</strong>

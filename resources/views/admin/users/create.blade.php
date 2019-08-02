@@ -28,7 +28,7 @@
             </div>
             <!-- /.box-header -->
             <!-- form start -->
-            <form class="form-horizontal" action="{{route('agents.store')}}" method="POST">
+            <form class="form-horizontal" action="{{route('users.store')}}" method="POST">
               @csrf
                <div class="form-group">
                   <label for="inputEmail3"class="col-sm-4 control-label">Branch</label>

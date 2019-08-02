@@ -21,6 +21,7 @@ Route::resource('admin/branches', 'BranchesController');
 
 Route::resource('admin/users', 'UsersController');
 Route::resource('admin/transaction', 'TransactionController');
+Route::resource('users', 'UsersController');
 Route::get('users', 'UserdashboardController@index')->name('users.dashboard.index');
 
 // Route::get('/agents', 'LoginAgentsController@index')->name('agents');

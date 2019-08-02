@@ -9,15 +9,12 @@
 			<thead>
 				<tr>
 					<td>#.</td>
-					<td>Branch</td>
-					<td>First name</td>
-					<td>Last name</td>
-					<td>Other name</td>
-					<td>Date of Birth</td>
-					<td>Sex</td>
-					<td>Education</td>
-					<td>Home Town</td>
-					<td>Residential Address</td>
+					<td>Name</td>
+					<td>Location</td>
+					<td>Agent</td>
+					<td>Capital</td>
+					<td>Date Est.</td>
+					<td>Actions</td>
 				</tr>
 			</thead>
 			<tbody>
@@ -34,7 +31,7 @@
 						<td>{{$agent->home_town}}</td>
 						<td>{{$agent->residential_address}}</td>
 						<td>
-							<a href="{{route('agents.show', ['agent' => $agent->id]) }}">
+							<a href="{{route('users.show', ['id' => $users->id]) }}">
 								<i class="fa fa-search-plus text-info"></i>
 							</a>
 							<a href="">

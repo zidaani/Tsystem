@@ -30,12 +30,12 @@ class LoginController extends Controller
 
     public function redirectPath()
     {
-        if (\Auth::user()->type_id == 1) {
+        if (\Auth::user()->type_id == 2) {
             return "/admin";
             // or return route('routename');
         }
 
-        return "/users";
+        // return "/users";
         // or return route('routename');
     }
 

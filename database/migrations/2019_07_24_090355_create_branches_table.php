@@ -20,7 +20,10 @@ class CreateBranchesTable extends Migration
             $table->integer('branch_capital');
             $table->date('date_established');
             $table->string('name_of_agent');
-            $table->timestamps();
+             $table->softDeletes();
+            $table->timestamp('created_at')->default(date('y-m-d H:i:s', strtotime('now')));
+            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
+
         });
     }
 

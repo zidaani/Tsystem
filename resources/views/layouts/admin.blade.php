@@ -308,7 +308,7 @@
       </div>
     </nav>
   </header>
-  @include('layouts.partials.sidebar'.Auth::user()->type_id)
+  @include('layouts.partials.sidebar')<!-- .Auth::user()->type_id -->
 
   <!-- Content Wrapper. Contains page content -->
  <div class="content-wrapper">

@@ -106,13 +106,13 @@
                   </div>
                 </div> -->
                 <div class="form-group">
-                  <div class="col-sm-offset-2 col-sm-10 mb-3">
+                 <!--  <div class="col-sm-offset-2 col-sm-10 mb-3">
                     <div class="checkbox">
                       <label> 
                         <input type="checkbox"> Remember me
                       </label>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- /.box-body -->
                   <div class="box-footer mt-3">
                     <div class="col-md-4">                      

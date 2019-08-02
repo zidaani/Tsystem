@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Branch;
 use Validator;
@@ -38,7 +36,7 @@ class BranchesController extends Controller
     public function store(Request $request)
     {
     	 $validator = Validator::make($request->all(), [
-            'branch_name' => 'required|unique:branches|min:4|max:24',
+            'branch_name' => 'required|unique',
             'branch_capital' => 'required|numeric|min:0.01',
             'name_of_agent' => 'required|unique:branches|min:4',
             'date_established' => 'required|date|before:tomorrow',

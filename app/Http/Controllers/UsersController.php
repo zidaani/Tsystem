@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Agent;
+use App\User;
 use Validator;
 
 class UsersController extends Controller
@@ -14,7 +14,7 @@ class UsersController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(){
-         $array['users'] = Agent::all();
+         $array['users'] = User::all();
         return view('admin.users.index')->with($array);
        }
 
@@ -53,14 +53,14 @@ class UsersController extends Controller
 
        $data = $request->all();
 
-       Agent::create($data);
+       User::create($data);
 
-       return redirect(route('agents.index'));
+       return redirect(route('users.index'));
     }
 
     public function create(){
          
-        return view('admin.agents.create');
+        return view('admin.users.create');
        }
 
 
@@ -74,9 +74,9 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-        $array['agent'] = Agent::findOrFail($id);
+        $array['users'] = Users::findOrFail($id);
         
-       return view('admin.agents.view')->with($array);
+       return view('admin.users.view')->with($array);
     }
 
     /**

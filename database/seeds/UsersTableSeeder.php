@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder
             'home_town' => 'Bolgatanga',
             'residential_address' => 'Achimota Abofu',
             'type_id'=>1,
-            'email' => 'johnnzibs@gmail.com',
+            'email' => 'johnnyzibs@gmail.com',
             'password' => Hash::make('ghana2.ziba'),
          
         ]);
